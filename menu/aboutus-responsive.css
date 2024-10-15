@@ -76,19 +76,6 @@
     overflow: hidden;
     position: relative;
   }
-  /* .frame {
-    border: 1px solid #000;
-    text-align: center;
-    box-sizing: border-box;
-    transition: 0.3s;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-  } */
   .shadow {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);

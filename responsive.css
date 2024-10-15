@@ -151,6 +151,11 @@
 
 /* ukuran viewport 412px atau lebih kecil */
 @media (max-width: 412px) {
+  .icon {
+    width: 300%;
+    display: inline-block;
+    background-size: cover;
+  }
   .container-fluid img {
     width: 25px;
     height: 25px;
