@@ -1,0 +1,193 @@
+@media (max-width: 1260px) {
+  #konten-2 {
+    height: 600px;
+  }
+
+  .prolog {
+    font-size: 18px;
+  }
+
+  #title {
+    padding-bottom: 0; /* naikin button & judul pas layar penuh */
+  }
+}
+
+/* ukuran viewport 992px atau lebih kecil */
+@media (max-width: 992px) {
+  #konten a {
+    width: 23%;
+  }
+
+  #title span {
+    font-size: 36px;
+  }
+
+  a p {
+    display: none; /* biar paragraf slider 2 ilang*/
+  }
+
+  .konten-2-prolog {
+    display: none;
+  }
+
+  .Rating {
+    display: block; /* biar rating ga ilang */
+    height: max-content;
+  }
+
+  a h5 {
+    font-size: 16px;
+  }
+
+  #konten-2 img {
+    height: 100px;
+  }
+
+  #konten-2 a {
+    padding: 10px;
+    height: max-content;
+    align-items: center; /* nengahin konten pas paragraf ilang */
+  }
+
+  .text-content-slider-2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #konten-2 h5 {
+    height: max-content;
+  }
+}
+
+/* ukuran viewport 768px atau lebih kecil */
+@media (max-width: 768px) {
+  #title span {
+    font-size: 32px;
+  }
+  .prolog {
+    font-size: 18px;
+  }
+
+  #duration, #rating {
+    font-size: 14px;
+  }
+
+  #title {
+    padding: 0 4% 0;
+  }
+  
+  #desc {
+    padding: 0 30px;
+  }
+  
+  #konten-title {
+    padding: 0 30px;
+  }
+  
+  #konten {
+    padding: 0 30px;
+  }
+
+  #play-button button {
+    font-size: smaller;
+    padding: 6px 14px;
+  }
+
+  #konten a {
+    width: 30%;
+  }
+
+  #slider-2 {
+    display: none; /* ngilangin slider 2 pas ukuran lebar*/
+  }
+
+  #slider-1 {
+    display: block; /* munculin slider 1 pas ukuran kecil */
+  }
+
+  #konten a {
+    width: 24%;
+  }
+}
+
+/* ukuran viewport 576px atau lebih kecil */
+@media (max-width: 576px) {
+  #title span {
+    font-size: 28px;
+  }
+
+  #title {
+    padding: 0 5% 0;
+  }
+  
+  #desc {
+    padding: 0 20px;
+  }
+  
+  #konten-title {
+    padding: 0 20px;
+  }
+  
+  #konten {
+    padding: 0 20px;
+  }
+
+  #duration, #rating {
+    font-size: 10px;
+  }
+
+  #back-button img {
+    width: 25px;
+    left: 20px;
+  }
+
+  .prolog-title {
+    font-size: 20px; /* Ukuran font prolog lebih kecil */
+  }
+
+  .prolog {
+    font-size: 16px; /* Ukuran font isi prolog lebih kecil */
+  }
+}
+
+/* ukuran viewport 412px atau lebih kecil */
+@media (max-width: 412px) {
+  #title span {
+    font-size: 19px; /* Ukuran lebih kecil untuk layar ponsel kecil */
+  }
+
+  #title {
+    padding: 0px 6% 0px;
+  }
+  
+  #desc {
+    padding: 0 18px;
+  }
+  
+  #konten-title {
+    padding: 0 18px;
+  }
+  
+  #konten {
+    padding: 0 18px;
+  }
+
+  #back-button img {
+    left: 10px;
+  }
+
+  #play-button button {
+    font-size: 10px;
+    padding: 4px 10px; /* Ukuran tombol yang lebih kecil */
+  }
+
+  .prolog-title {
+    font-size: 18px; /* Ukuran font lebih kecil */
+  }
+
+  .prolog {
+    font-size: 14px; /* Ukuran font isi lebih kecil */
+  }
+}

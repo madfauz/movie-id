@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  color: white;
+  font-family: "Poppins";
+}
+
+body,
+html {
+  width: 100%;
+  background-color: black;
+}
+
+/* ukuran back button */
+#back-button img {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 30px;
+  width: 35px;
+  height: auto;
+  opacity: 0.5;
+}
+
+/* atur gradiennya */
+#title {
+  padding: 0 40px 10% 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+/* video (lebih banyak diatur di js) */
+video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* judul film utama */
+#title span {
+  font-weight: 600;
+  font-size: 40px;
+  width: auto;
+  padding: 0;
+}
+
+.title-play-duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#play-button {
+  width: auto;
+}
+
+#play-button button {
+  font-size: small;
+  font-weight: 500;
+  padding: 8px 18px;
+}
+
+/* gambar panah watch now */
+#play-image {
+  width: 13px;
+  height: auto;
+}
+
+#duration,
+#rating {
+  color: rgba(255, 255, 255, 0.719);
+}
+
+#rating {
+  text-align: end;
+}
+/* end of judul */
+
+/* prolog */
+.prolog-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.prolog {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* slider 1 */
+#desc {
+  padding: 0 40px;
+  margin-top: 20px;
+}
+
+#slider-1 {
+  display: none;
+}
+
+#konten-title {
+  padding: 0 40px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+#konten {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  gap: 10px;
+  padding: 0 40px;
+  scrollbar-color: transparent transparent;
+}
+
+#konten a {
+  flex-shrink: 0;
+  width: 18%;
+  overflow: hidden;
+}
+
+#konten img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+#konten img:hover {
+  transform: scale(1.2);
+}
+
+/* slider 2 */
+#konten-2-container {
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+#konten-2 {
+  height: 900px;
+}
+
+#konten-2 img {
+  width: auto;
+  height: 175px;
+  transition: 0.3s;
+}
+
+#konten-2 a {
+  background-color: rgba(255, 255, 255, 0.12);
+  display: flex;
+  width: 100%;
+  height: 200px;
+  overflow-y: hidden;
+  scrollbar-color: transparent transparent;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 6px 0px;
+  transition: 0.3s;
+}
+
+.konten-2-prolog {
+  /* background-color: rgb(50, 71, 255); */
+  height: 100px;
+  overflow: hidden;
+  display: -webkit-box; /* Menggunakan flexbox khusus untuk kontrol garis */
+  -webkit-box-orient: vertical; /* Mengatur orientasi box menjadi vertikal */
+  -webkit-line-clamp: 5; /* Membatasi teks hingga 5 baris */
+  line-clamp: 5; /* Untuk browser yang mendukung line-clamp standar */
+  text-overflow: ellipsis;
+}
+
+.konten-2-prolog p {
+  margin: 0;
+}
+
+#konten-2 a:hover {
+  background-color: rgba(255, 255, 255, 0.192);
+}
+
+/* judul slider 2 + rating */
+#konten-2 h5 {
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.rating {
+  font-weight: 500;
+}
+
+/* paragraf di slider 2 */
+a p {
+  font-size: smaller;
+  font-weight: 300;
+}
+/* end of slider 2 */
+
+/* Footer */
+.footer {
+  background-color: #0f0e0e;
+  color: #fff;
+  padding: 35px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: auto;
+}
+
+.footer-section {
+  padding: 15px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  width: max-content;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f04e31;
+}
+
+.footer-section.social .social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-section.social .social-links {
+  width: max-content;
+  color: #ddd;
+}
+
+.footer-section.social .social-links a:hover {
+  color: #f04e31;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-bottom a {
+  color: #f04e31;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr;
+  }
+}
